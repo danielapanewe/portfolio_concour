@@ -11,15 +11,9 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-family: var(--font-body);
+    font-family: 'Saira Semi Condensed', sans-serif;
     color: var(--white);
-    background-color: var(--black);
-    //background-color: #281b1a;
-    //background-color: #1c1c1c;
-    //background-color: #010101;
-    background-color: #f6efee;
-    color: #454543;
-    background-color: #f3f1ea;
-    
-
+    background-color: var(--secondarycolor);
+    font-weight: 300;
+    scroll-behavior: smooth;
 }

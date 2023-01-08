@@ -1,0 +1,23 @@
+@use '../util' as *;
+.projet {
+    margin-top: 6rem;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.8rem;
+        margin-top: 2rem;
+        img {
+            width: 100%;
+            //  transform: perspective(800px) rotateY(20deg);
+        }
+        &--img2,&--img3
+         {
+            margin-top: 4rem;
+
+            @include breakpoint-down(mobile){
+                margin-top: 1rem;
+            }
+        }       
+    }
+}

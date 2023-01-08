@@ -1,0 +1,84 @@
+@use '../util' as *;
+
+.contact {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    position: relative;
+    background-color: #73030777;
+    box-shadow: 0 0 10px #73030777, 0 0 30px #73030777, 0 0 50px #73030777;
+    width: 100%;
+    height: 6rem;
+
+    @include breakpoint-down(mobile){
+        height: 11rem;
+    }
+    &__container {
+        border: 2px solid var(--white);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 rem(110);
+        height: 10rem;
+        display: grid;
+        align-items: center;
+
+        @include breakpoint-down(tablet) {
+            margin: 0 rem(50);
+        }
+        @include breakpoint-down(mobile){
+            height: 15rem;
+        }
+        @include breakpoint-down(small) {
+            margin: 0 rem(20);
+        }
+    }
+    &__title {
+        position: absolute;
+        top: -11%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        color: #1c1c1c;
+        padding: 0 1rem;
+        @include breakpoint-down(mobile){
+            top: -5.4%;
+            width: 80%;
+            text-align: center;
+        }
+    }
+    &__paragraph {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    &__content {
+        &--item1,
+        &--item2 {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+
+            @include breakpoint-down(mobile){
+                flex-direction: column;
+            }
+
+            .contact__sociallink {
+                ion-icon {
+                    color: var(--white) !important;
+                }
+            }
+        }
+        &--item2 {
+            a {
+                color: var(--white);
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.textcenter {
+    text-align: center;
+}

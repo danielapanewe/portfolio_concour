@@ -4,47 +4,92 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
         <link rel="stylesheet" href="dist/style.css" />
         <title>Kriss's Portfolio</title>
     </head>
     <body>
         <header class="header">
             <div class="header__container container">
-                <a href="#" class="header__logo">Food<span>tuck</span></a>
+                <a href="#" class="header__logo">
+                    <img src="images/KrissKarter.png" alt="mon logo" />
+                </a>
                 <div class="header__burger">
                     <span class="header__icon"></span>
                 </div>
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#" class="header__link active">Accueil</a>
+                            <a href="#banner" class="header__link active">Accueil</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">A propos</a>
+                            <a href="#about" class="header__link">A propos</a>
+                        </li>
+                       
+                        <li class="header__item">
+                            <a href="#projet" class="header__link">Mes projets</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Mes Services</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Skills</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Mes projets</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Contact</a>
+                            <a href="#contact" class="header__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
+            <!-- ------BANNER--------------- -->
+            <section class="banner" id="banner">
+                <div class="banner__container">
+                    <div class="banner__text">
+                        <h1 class="banner__title">
+                            Hi, je suis Kriss Karter , photographe et designer
+                        </h1>
+                        <p class="banner__paragraph paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Consequuntur, debitis ut vero animi temporibus
+                            tempora. Sit aspernatur ipsam quos. Deserunt
+                            possimus, aut tempora nostrum nulla a ad saepe
+                            voluptatibus doloremque!Lorem
+                        </p>
+                        <p class="sociallinks">
+                            <a href="#" class="sociallink">
+                                <ion-icon name="logo-behance"></ion-icon>
+                            </a>
+                            <a href="#" class="sociallink">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="#" class="sociallink">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                            <a href="#" class="sociallink">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </p>
+                        <a href="#contact" class="button">Hire Me</a>
+                    </div>
+                  
+                </div>
+            </section>
             <!-- ------SECTION A PROPOS--------------- -->
-            <section class="about container">
+            <section class="about container" id="about">
                 <h2 class="title">A Propos</h2>
                 <div class="about__container">
                     <img
-                        src="images/img3.jpg"
+                        src="images/about.png"
                         alt="ma photo"
                         class="about__img"
                     />
@@ -60,28 +105,123 @@
                             Eum deserunt est commodi soluta. Fugit voluptates
                             voluptas ratione? Ullam saepe distinctio maxime ut
                             eum dignissimos quod vel cumque, mollitia error
-                            facilis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, dicta. Animi distinctio nam libero voluptate blanditiis, facilis vel excepturi, dolorum rerum est quis vero illum qui esse placeat inventore ab.
+                            facilis? Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Quis, dicta. Animi distinctio nam
+                            libero voluptate blanditiis, facilis vel excepturi,
+                            dolorum rerum est quis vero illum qui esse placeat
+                            inventore ab.
                         </p>
-                        <p class="about__sociallink">
-                            <span>Behance</span>
-                            <span>Instagram</span>
-                            <span>Facebook</span>
-                            <span>LinkedIn</span>
+
+                        <p class="about__sociallinks sociallinks">
+                            <a href="#" class="sociallink">
+                                <ion-icon name="logo-behance"></ion-icon>
+                            </a>
+                            <a href="#" class="sociallink">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="#" class="sociallink">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                            <a href="#" class="sociallink">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
                         </p>
                         <a href="#" class="button">Mon CV</a>
                     </div>
-
-                 
                 </div>
             </section>
 
-            <!-- ------SECTION SERVICES--------------- -->
-            <section class="service container">
-                <div class="service__container">
-                    <div class="service__element"></div>
+            <!-- ------SECTION PROJETS--------------- -->
+            <section class="projet container" id="projet">
+                <h2 class="title">Mes projets</h2>
+                <div class="projet__container">
+                    <img
+                        src="images/gall1.jpg"
+                        alt=""
+                        class="projet__container--img1"
+                    />
+                    <img
+                        src="images/gall7.jpg"
+                        alt=""
+                        class="projet__container--img2"
+                    />
+                    <img
+                        src="images/gall2.jpg"
+                        alt=""
+                        class="projet__container--img3"
+                    />
+                    <img
+                    src="images/gall11.jpg"
+                    alt=""
+                    class="projet__container--img4"
+                />
+                <img
+                    src="images/gall6.jpg"
+                    alt=""
+                    class="projet__container--img1"
+                />
+                <img
+                    src="images/gall5.jpg"
+                    alt=""
+                    class="projet__container--img2"
+                />
+                <img
+                    src="images/gall12.jpg"
+                    alt=""
+                    class="projet__container--img3"
+                />
+                <img
+                    src="images/gall13.jpg"
+                    alt=""
+                    class="projet__container--img4"
+                />
                 </div>
             </section>
+
+            <!-- ------SECTION ME CONTACTER--------------- -->
+            <section class="contact " id="contact">
+                <div class="contact__container container ">
+                    <h3 class="contact__title">Me Contacter</h3>
+                    <div class="contact__content">
+                        <div class="contact__content--item1">
+                            <p class="contact__paragraph">
+                                Réjoignez-moi sur mes pages
+                            </p>
+                            <p class="sociallinks contact__sociallink">
+                                <a href="#" class="sociallink">
+                                    <ion-icon name="logo-behance"></ion-icon>
+                                </a>
+                                <a href="#" class="sociallink">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                                <a href="#" class="sociallink">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                                <a href="#" class="sociallink">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </p>
+                        </div>
+                     
+                        
+                        <p class="contact__content--item2 contact__paragraph">
+                            <span> Ou envoyez moi un mail via mon adresse &#128073;</span>
+                            <a href="mailto:">test@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            
         </main>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
         <script src="app/js/script.js"></script>
     </body>
 </html>
